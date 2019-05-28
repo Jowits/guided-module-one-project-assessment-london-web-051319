@@ -1,16 +1,4 @@
-class Order
-  attr_reader :pizza, :customer
-
-  @@all = []
-
-  def self.all
-    @@all
-  end
-
-  def initialize(pizza , customer)
-    @pizza = pizza
-    @customer = customer
-    @@all << self
-  end
-
+class Order < ActiveRecord::Base
+  belongs_to :pizza
+  belongs_to :customer
 end

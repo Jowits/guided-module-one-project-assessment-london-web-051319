@@ -10,21 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_27_191018) do
+ActiveRecord::Schema.define(version: 2019_05_28_111120) do
 
-  create_table "customer", force: :cascade do |t|
+  create_table "customers", force: :cascade do |t|
     t.string "name"
     t.string "address"
   end
 
-  create_table "order", force: :cascade do |t|
+  create_table "orders", force: :cascade do |t|
     t.integer "pizza_id"
     t.integer "customer_id"
   end
 
   create_table "pizzas", force: :cascade do |t|
     t.string "name"
-    t.integer "price"
+    t.float "price"
   end
 
 end

@@ -1,15 +1,8 @@
-class Customer
-  attr_reader :name, :address
+class Customer < ActiveRecord::Base
 
-  @@all = []
+  has_many :orders
+  has_many :pizzas, through: :orders
 
-  def self.all
-    @@all
-  end
 
-  def initialize(name , address)
-    @name = name
-    @address = address
-    @@all << self
-  end
+
 end
