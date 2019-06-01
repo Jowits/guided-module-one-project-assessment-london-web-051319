@@ -62,6 +62,7 @@ class CommandLineInterface
     selected_pizza = Pizza.find_by(name: pizza_name)
     if selected_pizza.nil?
       puts "Please choose someting from the menu."
+      self.choose_pizza(customer)
     else
       Order.create(pizza_id: selected_pizza.id, customer_id: customer.id)
       puts "You choose #{selected_pizza.name}, price $#{selected_pizza.price}"
