@@ -23,13 +23,6 @@ customer7 = Customer.create({name: "Coby Doyle", address: "571 Broadway LONDON K
 customer8 = Customer.create({name: "Kelly Dunn", address: "931 Park Avenue LONDON CW37 7TL"})
 customer9 = Customer.create({name: "Coco Gross", address: "7618 Manor Road LONDON WR36 1TZ"})
 customer10 = Customer.create({name: "Maisha Wilcox", address: "383 Mill Lane LONDON IV31 7XO"})
-# customer11 = Customer.new("Piper Terry", address: "27 Victoria Street LONDON NE65 4RI"})
-# customer12 = Customer.new("Sonny Holding", address: "7496 Green Lane LONDON SP42 9WI"})
-# customer13 = Customer.new("Mike Erickson", address: "34 Richmond Road LONDON LD73 5UW"})
-# customer14 = Customer.new("Melinda Adam", address: "27 Victoria Street LONDON DE65 4RI"})
-# customer15 = Customer.new("Rami Neville", address: "771 Manchester Road LONDON PR76 7FB"})
-#
-#
 # # order
 
 order1 = Order.create({pizza_id: margherita.id, customer_id: customer1.id})
